@@ -1,8 +1,9 @@
 import video from "../data/video.js";
 import Votes from './Votes'
+import Comments from "./Comments.js";
 
 function App() {
-  // console.log("Here's your data:", video);
+  console.log("Here's your data:", video);
 
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         title="Thinking in React"
       />
       <Votes data={video}/>
+      <Comments data={video}/>
     </div>
   );
 }
